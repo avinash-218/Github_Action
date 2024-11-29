@@ -15,10 +15,10 @@ jobs:   # workflow
 
         steps:  # workflow steps
             - name : checkout the code  # clone / check out the code from repository to the VM
-              uses : actions/checkout@v2    # using pre-built action
+              uses : actions/checkout@v3    # using pre-built action
 
             - name : Python environment
-              uses : actions/setup-python@v3    # create python environment using pre-built action
+              uses : actions/setup-python@v4    # create python environment using pre-built action
               with :
                     python-version : '3.10'
 

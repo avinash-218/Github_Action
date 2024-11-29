@@ -1,0 +1,17 @@
+# lightweight python 3.9
+FROM python:3.9-slim    
+
+# set working directory
+WORKDIR /app
+
+# copy contents from Demo 2 to working directory
+COPY Demo_2 /app
+
+# Install requirements
+RUN pip install -r requirements
+
+# Expose Port
+EXPOSE 5000
+
+# Run app.py
+CMD ['python', 'app.py']

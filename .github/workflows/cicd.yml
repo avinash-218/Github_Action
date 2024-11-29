@@ -50,6 +50,7 @@ jobs :  #workflow
               uses : docker/build-push-action@v4
               with :
                 context : Demo_2
+                file : ./Demo_2/DockerFile
                 push : true
                 tags : ${{secrets.DOCKER_USER_NAME}}/flasktest-app:latest
 
